@@ -1,0 +1,5 @@
+1)He entity type 'Slider' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'
+İlk olaraq bu errorla qarsilasadim arasdirdiqdan sonra slider classima [Key] keywordun daxil etdim.
+2)Keyword not supported: 'data source:desktop-******\sqlexpress;database'.
+appsettings.json da databasein daxil olmasinda istifade oluna simvollar sehvine gore bu error problemin yasadim.
+3)DataBaseden melumatlari cekdim amma struktur qeliz oldugu ucun istediyim neticenu ala bilmedim.
