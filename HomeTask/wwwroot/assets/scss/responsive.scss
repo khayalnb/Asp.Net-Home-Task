@@ -1,0 +1,95 @@
+@media only screen and (max-width:320px) {
+    .nav-top{
+
+        height: 40px !important;
+        .nav-top-area{
+            width:100% ;
+            .nav-left{
+                width: 60% !important;
+                p{
+                    font-size: 10px !important;
+                }
+            }
+            .nav-average{
+                width: 40% !important;
+                font-size: 10px;
+            }
+            .nav-right{
+                display: none !important;
+            }
+        }
+    }
+    .card-image-info{
+        .img-bottom{
+            height: 35px !important;
+            p{
+                opacity: 1 !important;
+            }
+            i{
+                opacity: 1 !important;
+            }
+        }
+        .image-info{
+            i{
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    .map{
+        height: 300px  !important;
+    }
+    .contact_right-part{
+        display: none;
+    }
+  
+    
+
+}
+@media only screen and (max-width:767px){
+    .nav-top{
+
+        height: 40px !important;
+        .nav-top-area{
+            width:100% !important;
+            .nav-left{
+                width: 60% !important;
+                p{
+                    font-size: 10px !important;
+                }
+            }
+            .nav-average{
+                width: 40% !important;
+                font-size: 10px;
+            }
+            .nav-right{
+                display: none !important;
+            }
+        }
+    }
+
+    .card-image-info{
+        .img-bottom{
+            height: 35px !important;
+            p{
+                opacity: 1 !important;
+            }
+            i{
+                opacity: 1 !important;
+            }
+        }
+        .image-info{
+            i{
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    .map{
+        height:700px  !important;
+    }
+    .contact_right-part{
+        display: none;
+    }
+    
+}

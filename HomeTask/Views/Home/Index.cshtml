@@ -1,0 +1,591 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <section>
+        <div class="container m-auto ">
+            <div class="row slider-part">
+                <div class="col-12 a">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner"
+
+                            
+                             
+                            <div class="carousel-item slider-part active" data-bs-interval="2000">
+
+                                @foreach (var item in collection)
+                                {
+                                    <div class="corusel-part">
+                                        <div class=" myTitle">
+                                            <div>
+                                                <p>TIME IS ALMOST UP</p>
+                                                <h2 class="display-3 mt-4 mb-4" style="line-height: 1 ">Design clocks<br> on sale</h2>
+                                                <a href="#">Start shopping</a>
+                                            </div>
+                                        </div>
+                                       
+                                            <div class="myImage">
+                                                <img src="~/assets/image/Carousel Image/@item.Image" alt="">
+                                            </div>
+                                        
+
+                                    </div>
+
+                                }
+
+                            </div>
+
+                             
+                            
+
+                            @*<div class="carousel-item" data-bs-interval="2000">
+                                <div class="corusel-part">
+                                    <div class=" myTitle">
+                                        <div>
+                                            <h2>OUR ALL-TIME FAVOURITES</h2>
+                                            <h2 class="display-3" style="line-height: 1">Black & White</h2>
+                                            <p class="text-muted mb-5">
+                                                The bedding was hardly able to cover it and seemed ready to slide off
+                                                any<br> moment. His many legs, pit
+                                            </p>
+                                            <a href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                    <div class="myImage">
+                                        <img src="~/assets/image/Carousel Image/chair2-transparent.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="corusel-part">
+                                    <div class=" myTitle">
+                                        <div>
+                                            <p class="subtitle letter-spacing-3 mb-3 text-dark font-weight-light">Our all-time favourites</p>
+                                            <h2 class="display-3" style="line-height: 1">Boxxez</h2>
+                                            <p class="text-muted mb-5">
+                                                The bedding was hardly able to cover it and seemed ready to slide off
+                                                any<br> moment. His many legs, pit
+                                            </p>
+                                            <a href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                    <div class="myImage">
+                                        <img src="~/assets/image/Carousel Image/box-transparent.png" alt="">
+                                    </div>
+                                </div>
+                            </div>*@
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Slider End-->
+    <!--Product Card Part-1-->
+    <section class="mb-5">
+        <div class="container ps-5 pe-5">
+            <div class="row ps-5 ">
+                <div class="col-xl-8 mb-5">
+                    <p class="text-uppercase text-muted font-weight-bold mb-1">Top choices</p>
+                    <h3>Popular this week</h3>
+                    <p class="lead text-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="row mb-5 px-md-5">
+                <div class="col-12 col-md-4 mb-4 mb-lg-6 pt-md-3 hover-scale">
+                    <a href="detail-2.html">
+                        <img class="img-fluid"
+                             src="~/assets/image/Card image/book-sq.jpg" alt="">
+                    </a>
+                    <div class="px-4 position-relative z-index-2 mt--3">
+                        <a class="text-dark text-decoration-none"
+                           href="detail-2.html">
+                            <h3>Furniture<br>source<br>book </h3>
+                            <p class="text-muted">$39.90</p>
+                        </a>
+                        <p> <a class="btn btn-link text-dark text-decoration-none px-0" href="detail-2.html"> Shop now </a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 ml-auto mb-4 mb-lg-5 hover-scale">
+                    <div class="position-absolute z-index-5 py-6">
+                        <a class="text-dark text-decoration-none" href="detail-1.html">
+                            <h2>Norwegg<br>design<br>chair </h2>
+                            <p class="text-muted">$139.90</p>
+                        </a>
+                        <p> <a class="btn btn-link text-dark text-decoration-none px-0" href="detail-1.html"> Shop now </a></p>
+                    </div>
+                    <div class="ml-6">
+                        <a href="detail-1.html">
+                            <img class="img-fluid" src="~/assets/image/Card image/chair-2-sq.jpg"
+                                 alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 px-md-5">
+                <div class="col-12 col-md-4 ml-auto pt-lg-6 mb-4 mb-lg-5 order-md-2 hover-scale">
+                    <a class="text-dark text-decoration-none" href="detail-1.html">
+                        <img class="img-fluid"
+                             src="~/assets/image/Card image/box-sq.jpg" alt="">
+                    </a>
+                    <div class="px-4 position-relative z-index-2 mt--3">
+                        <a class="text-dark text-decoration-none"
+                           href="detail-1.html">
+                            <h3>Accessory<br>boxes</h3>
+                            <p class="text-muted">$29.90</p>
+                        </a>
+                        <p> <a class="btn btn-link text-dark text-decoration-none px-0"> Shop now </a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 mb-4 mb-lg-5 order-md-1 hover-scale">
+                    <div class="position-absolute z-index-5 py-6">
+                        <a class="text-dark text-decoration-none" href="detail-2.html">
+                            <h2>Sunn<br>Clock<br></h2>
+                            <p class="text-muted">$89.90</p>
+                        </a>
+                        <p> <a class="btn btn-link text-dark text-decoration-none px-0" href="detail-2.html"> Shop now </a></p>
+                    </div>
+                    <div class="ml-6">
+                        <a href="detail-2.html">
+                            <img class="img-fluid" src="~/assets/image/Card image/clock-sq.jpg"
+                                 alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5 ps-md-5 pe-md-5">
+                <div class="col-12 col-md-3 pt-md-3 mb-4 mb-lg-5 hover-scale">
+                    <a href="detail-2.html">
+                        <img class="img-fluid"
+                             src="~/assets/image/Card image/clock2-sq.jpg" alt="">
+                    </a>
+                    <div class="px-4 position-relative z-index-2 mt--3">
+                        <a class="text-dark text-decoration-none"
+                           href="detail-2.html">
+                            <h3>Swiss<br>Minutes<br>Black </h3>
+                            <p class="text-muted">$149.90</p>
+                        </a>
+                        <p> <a class="btn btn-link text-dark text-decoration-none px-0" href="detail-2.html"> Shop now </a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 ml-auto hover-scale">
+                    <div class="position-absolute z-index-5 py-6">
+                        <a class="text-dark text-decoration-none" href="detail-1.html">
+                            <h2>Korona<br>dining<br>room chair </h2>
+                            <p class="text-muted">$39.90</p>
+                        </a>
+                        <p> <a class="btn btn-link text-dark text-decoration-none px-0" href="detail-1.html"> Shop now </a></p>
+                    </div>
+                    <div class="ml-6">
+                        <a href="detail-1.html">
+                            <img class="img-fluid" src="~/assets/image/Card image/chair3-3-sq.jpg"
+                                 alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Product Card-1 End-->
+    <!--Timer Part Start-->
+    <section class="pt-5">
+        <div class="position-relative py-5" style="background-color: #ebf7ff;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div>
+                            <p class="subtitle mb-3 text-danger">Deal of the week</p>
+                            <h3 class="h1">Black and white Nordegg chairs</h3>
+                            <p class="text-muted">
+                                <del class="mr-3">$129.00</del><span>$79.00</span>
+                            </p>
+                            <p class="mb-4"><span class="badge badge-danger p-3">$50 off</span></p>
+                            <div class="bg-white px-5 py-4 shadow mb-4" id="simple_timer">
+                                <div class="row justify-content-between d-flex">
+                                    <!--Timer-->
+                                </div>
+                            </div>
+                            <p><a class="btn btn-outline-dark" href="#">Shop now</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img class="img-fluid" src="~/assets/image/Chair image/chair2-transparent.png"
+                             alt="" style="max-height: 450px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Timer Part End-->
+    <!--Product card start-->
+    <section class="mt-5 ">
+
+        <div class="container mb-5">
+            <!--Product Title start-->
+            <div data-aos="fade-up" data-aos-duration="3000" class="row ">
+                <div class=" pe-2 col-12 product-title">
+                    <h2>New Arrivals</h2>
+                    <p class="pe-4">
+                        One morning, when Gregor Samsa woke from troubled dreams, he found himself
+                        transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a
+                        little he could see his brown belly, slightly domed and divided by arches into stiff sections
+                    </p>
+                </div>
+            </div>
+            <!--Product title End-->
+            <!--Product Card Row 1 Start-->
+            <div class="row justify-content-between align-items-center mb-4 mt-4">
+                <div class="col-8 col-md ">
+                    <ul class="list-inline mb-3 mb-md-0">
+                        <li class="list-inline-item"><a class="text-dark hover-border-bottom" href="#">All Products </a></li>
+                        <li class="list-inline-item">
+                            <a class="text-muted text-hover-dark hover-border-bottom" href="#">Chairs </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-muted text-hover-dark hover-border-bottom" href="#">Books</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-muted text-hover-dark hover-border-bottom" href="#">Clothes</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-muted text-hover-dark hover-border-bottom"
+                               href="#">Accessories</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-6 col-md-auto me-4">
+                    <a class="btn btn-link px-0 hover-border-bottom text-dark"
+                       href="#">
+                        All
+                        products
+                    </a>
+                </div>
+            </div>
+            <div class="row p-0 itemsBox">
+                <div data-aos="zoom-in" class="col-sm-3">
+                    <div class="card-image-info">
+                        <div class="img">
+                            <img class="img-1" src="~/assets/image/Card  image -2/card_1/chair.jpg" alt="">
+                            <img class="img-2" src="~/assets/image/Card  image -2/card_1/chair-2.jpg" alt="">
+
+                            <div class="img-bottom">
+                                <p class="attToCart">Add to Cart</p>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <div class="image-info-1">
+                                <h5 class="mt-1">Norwegg Chair</h5>
+                                <span>$40.00</span>
+                            </div>
+                            <div class="image-info-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-sm-3">
+                    <div class="card-image-info">
+                        <div class="img">
+                            <img class="img-1" src="~/assets/image/Card  image -2/card_2/book.jpg" alt="">
+                            <img class="img-2" src="~/assets/image/Card  image -2/card_2/book-2.jpg" alt="">
+
+                            <div class="img-bottom">
+                                <p class="attToCart">Add to Cart</p>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <div class="image-info-1">
+                                <h5 class="mt-1">Books</h5>
+                                <span>$40.00</span>
+                            </div>
+                            <div class="image-info-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-sm-3">
+                    <div class="card-image-info">
+                        <div class="img">
+                            <img class="img-1" src="~/assets/image/Card  image -2/card_3/chair2.jpg" alt="">
+                            <img class="img-2" src="~/assets/image/Card  image -2/card_3/chair2-2.jpg" alt="">
+
+                            <div class="img-bottom">
+                                <p class="attToCart">Add to Cart</p>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <div class="image-info-1">
+                                <h5 class="mt-1">Another Chair</h5>
+                                <span>$40.00</span>
+                            </div>
+                            <div class="image-info-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-sm-3">
+                    <div class="card-image-info">
+                        <div class="img">
+                            <img class="img-1" src="~/assets/image/Card  image -2/card_4/chair3.jpg" alt="">
+                            <img class="img-2" src="~/assets/image/Card  image -2/card_4/chair3-3.jpg" alt="">
+
+                            <div class="img-bottom">
+                                <p class="attToCart">Add to Cart</p>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <div class="image-info-1">
+                                <h5 class="mt-1">Your New Chair</h5>
+                                <span>$40.00</span>
+                            </div>
+                            <div class="image-info-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Product Card row 1 end-->
+            <!--Product Card  row 2 START-->
+            <div class="row mt-5 mb-5">
+                <div data-aos="zoom-in" class="col-sm-3 ">
+                    <div class="card-image-info">
+                        <div class="img">
+                            <img class="img-1" src="~/assets/image/Card  image -2/card_5/clock.jpg" alt="">
+                            <img class="img-2" src="~/assets/image/Card  image -2/card_5/clock-2.jpg" alt="">
+
+                            <div class="img-bottom">
+                                <p class="attToCart">Add to Cart</p>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <div class="image-info-1 itemInfo">
+                                <h5 class="mt-1">Clock Multicolor</h5>
+                                <span>$40.00</span>
+                            </div>
+                            <div class="image-info-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-sm-3">
+                    <div class="card-image-info">
+                        <div class="img">
+                            <img class="img-1" src="~/assets/image/Card  image -2/card_6/clock3.jpg" alt="">
+                            <img class="img-2" src="~/assets/image/Card  image -2/card_6/clock3-2.jpg" alt="">
+
+                            <div class="img-bottom">
+                                <p class="attToCart">Add to Cart</p>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <div class="image-info-1">
+                                <h5 class="mt-1">Clock</h5>
+                                <span>$40.00</span>
+                            </div>
+                            <div class="image-info-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-sm-3">
+                    <div class="card-image-info">
+                        <div class="img">
+                            <img class="img-1" src="~/assets/image/Card  image -2/card_7/box.jpg" alt="">
+                            <img class="img-2" src="~/assets/image/Card  image -2/card_7/box-2.jpg" alt="">
+
+                            <div class="img-bottom">
+                                <p class="addToCart">Add to Cart</p>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <div class="image-info-1">
+                                <h5 class="mt-1">Accessory Box</h5>
+                                <span>$40.00</span>
+                            </div>
+                            <div class="image-info-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-sm-3 ">
+                    <div class="card-image-info">
+                        <div class="img">
+                            <img class="img-1" src="~/assets/image/Card  image -2/card_8/box2.jpg" alt="">
+                            <img class="img-2" src="~/assets/image/Card  image -2/card_8/box-2.jpg" alt="">
+
+                            <div class="img-bottom">
+                                <p class="attToCart">Add to Cart</p>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <div class="image-info-1">
+                                <h5 class="mt-1">Beige</h5>
+                                <span>$40.00</span>
+                            </div>
+                            <div class="image-info-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Product Card Row 2 END-->
+    </section>
+    <!--Product Card End-->
+    <div class="cartBox">
+        <div class="cart">
+            <i class="fas fa-times"></i>
+            <h1>Cart</h1>
+            <table></table>
+        </div>
+    </div>
+    <section class="Summers">
+        <div class="container mb-5">
+            <div class="position-relative text-center" style="background: #eae0bd; ">
+                <div class="position-absolute w-100 h-100 overflow-hidden">
+                    <svg class="svg-blob svg-blob-fill-current text-primary"
+                         style=" width: 400px; height: 400px; max-width: 100%; left: -200px; top: -50px; ">
+                        <use xlink:href="#blob-shape"> </use>
+                    </svg>
+                </div>
+                <div class="py-6 px-4">
+                    <img class="position-absolute d-none d-md-block"
+                         style="right: 0;top: -50px; max-height: 100%; z-index: 5;"
+                         src="~/assets/image/Chair image/chair-transparent.png" alt="">
+                    <div class="position-relative z-index-10">
+                        <h4 class="display-3 font-weight-bold mb-3">Summer Sales</h4>
+                        <h5 class="h2 font-weight-light mb-5">Our biggest sales this year — up to 60% off!</h5><a class="btn btn-outline-dark" href="#">Start shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="customer-service pt-5 pb-5">
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class=" col-sm-3 p-0 d-flex justify-content-center service-customer">
+                    <i class="fas fa-truck mt-2"></i>
+                    <div class="text-part">
+                        <h6>Free shipping &amp; return</h6>
+                        <p>Free Shipping over $300</p>
+                    </div>
+
+                </div>
+                <div class=" col-sm-3 p-0 d-flex justify-content-center service-customer">
+                    <i class="fas fa-dollar-sign mt-2"></i>
+                    <div class="text-part">
+                        <h6>Money back guarantee</h6>
+                        <p>30 Days Money Back Guarantee</p>
+                    </div>
+
+                </div>
+                <div class="col-sm-3 p-0 d-flex justify-content-center service-customer">
+                    <i class="fas fa-percent mt-2"></i>
+                    <div class="text-part">
+                        <h6>Best prices</h6>
+                        <p>Always the best prices</p>
+                    </div>
+
+                </div>
+                <div class="col-sm-3 p-0 d-flex justify-content-center service-customer">
+                    <i class="fas fa-headset mt-2"></i>
+                    <div class="text-part">
+                        <h6>020-800-456-747</h6>
+                        <p>24/7 Available Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

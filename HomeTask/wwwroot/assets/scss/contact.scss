@@ -1,0 +1,241 @@
+@import 'color';
+@import 'font';
+@import 'responsive';
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-top {
+    width: 100%;
+    height: 55px;
+    background-color: $colorNavbar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nav-top-area {
+        width: 93%;
+        height: 30px;
+        display: flex;
+
+        .nav-left {
+            width: 34%;
+            height: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+
+            .icon-1 {
+                margin-right: 15px;
+                color: #343A40;
+
+                &:hover {
+                    color: $colorGold;
+                }
+            }
+
+            .icon-2 {
+                margin-right: 20px;
+                color: #343A40;
+
+                &:hover {
+                    color: $colorGold;
+                }
+            }
+
+            .icon-3 {
+                padding-right: 5px;
+            }
+
+            p {
+                display: inline;
+                margin-top: 2px;
+                margin-bottom: 3px;
+                font-family: $font-family;
+                font-weight: 300;
+            }
+
+
+        }
+
+        .nav-average {
+            width: 33%;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                display: inline;
+                margin: 0;
+                padding-bottom: 2px;
+                font-family: $font-family;
+                font-weight: 300;
+
+            }
+        }
+
+        .nav-right {
+            width: 34%;
+            height: 30px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+
+            .btn-style {
+                background-color: $colorNavbar;
+                border: 0;
+                color: #343A40;
+                text-decoration: none;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.nav-bottom-part {
+    width: 100%;
+    height: 520px;
+    background-image: url(../image/Blog/blog-2.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.parallax-window {
+    width: 100%;
+    min-height: 520px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    .location-part {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        padding-top: 70px;
+
+        >ol li a {
+            color: $colorGold;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        >ol li {
+            color: $colorGrey;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+
+    .hero-content {
+        text-align: center;
+        margin-top: 20px;
+
+        .hero-heading {
+            font-family: $font-family;
+            font-weight: 900;
+        }
+
+        p {
+            font-family: $font-family;
+            font-weight: 400;
+        }
+    }
+}
+
+.map {
+    width: 100%;
+    height: 700px;
+}
+
+.contact {
+    height: 500px;
+
+
+    .contact_left-part {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+
+        .icons{
+            color: $colorGold;
+            cursor: pointer;
+
+            & i:hover{
+                color: #978443;
+            }
+        }
+      
+       
+
+        h2 {
+            font-family: $font-family;
+            font-weight: 900;
+            font-size: 80px;
+            display: inline;
+        }
+    }
+
+    .contact_right-part{
+        padding-top: 100px;
+        height: 500px;
+  
+
+        button{
+            border: 1px solid $colorGold;
+            background-color: white;
+            color: $colorGold;
+            font-family: $font-family;
+            font-weight: 500;
+            letter-spacing: 2px;
+            &:hover{
+                color: $colorBlack;
+                background: $colorGold;
+               
+            }
+
+        }
+    }
+}
+
+
+
+.customer-service {
+    width: 100%;
+    background-color: $colorBackGround;
+
+    .service-customer {
+
+        display: flex;
+
+        .text-part {
+
+            width: 250px;
+            margin-left: 10px;
+
+            h6 {
+                font-family: $font-family;
+                font-weight: 800;
+            }
+
+            p {
+                color: $colorGrey;
+            }
+        }
+    }
+}
+
+.form-part {
+    display: none;
+}
